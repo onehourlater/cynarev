@@ -1,0 +1,100 @@
+
+.modal {
+  z-index: 10;
+
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0,0,0,0.8);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow-y: auto;
+
+  &__c {
+    position: relative;
+
+    overflow-y: auto;
+
+    margin: 40px;
+    @media screen and (max-width: 900px) {
+      margin: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      margin: 5px;
+    }
+
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__close {
+    z-index: 11;
+
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    @media screen and (max-width: 900px) {
+      top: 5px;
+      right: 5px;
+    }
+
+    display: flex;
+
+    background-color: rgba(255,255,255,0.95);
+    --border: 2px solid $main-color;
+    border-radius: 12px;
+
+    padding: 10px;
+    transition: 0.2s ease all;
+
+    cursor: pointer;
+    
+    svg {
+      fill: $main-color;
+      width: 40px;
+      height: 40px;
+      transition: 0.2s ease all;
+
+      @media screen and (max-width: 600px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &:hover {
+      --border: 2px solid transparent;
+      background-color: $main-color;
+
+      svg {
+        transform: rotate(90deg);
+        fill: white;
+      }
+    }
+  }
+}
+@keyframes simple-rotation {
+  0% { transform: rotate(-3deg); }
+  20% { transform: rotate(-3deg); }
+  40% { transform: rotate(3deg); }
+  60% { transform: rotate(3deg); }
+  80% { transform: rotate(3deg); }
+  100% { transform: rotate(-3deg); }
+}
+
+.modal-img {
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-height: 100%;
+  -o-object-fit: contain;
+  object-fit: cover;
+}
+

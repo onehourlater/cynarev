@@ -1,0 +1,100 @@
+@import './image.scss';
+@import './video.scss';
+@import './thumbnail.scss';
+
+
+.article-block-media {
+  width: 75vw;
+  max-width: $image-block-max-width;
+  @media screen and (max-width: 900px) {
+    width: auto;
+    max-width: 100%;
+  }
+
+  &__view {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+
+  &__project-info {
+    padding: 0px 10px;
+    @media screen and (max-width: 400px) {
+      padding: 0px;
+    }
+  }
+}
+
+.media-view {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+  }
+}
+
+.media-description {
+  font-size: $text-size-common;
+  @media screen and (max-width: 600px) {
+    font-size: $text-size-small;
+  }
+
+  max-width: $text-block-max-width;
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    text-align: left;
+  }
+}
+
+.media-project-info {
+  margin: 0 auto;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+
+  &__description {
+    max-width: $text-block-max-width;
+
+    margin-right: 20px;
+    font-size: $text-size-common;
+    @media screen and (max-width: 900px) {
+      font-size: $text-size-medium;
+    }
+    @media screen and (max-width: 600px) {
+      margin-right: 0px;
+      margin-bottom: 10px;
+      font-size: $text-size-small;
+    }
+  }
+
+  &__project {
+    margin-left: auto;
+    text-align: right;
+
+    &__name {
+      font-size: $text-size-common;
+      @media screen and (max-width: 900px) {
+        font-size: $text-size-medium;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: $text-size-small;
+      }
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+
+    &__url {
+
+    }
+  }
+}

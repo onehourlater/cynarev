@@ -1,0 +1,33 @@
+
+.page {
+
+}
+.page-title {
+  max-width: $title-block-max-width;
+}
+
+.index-page {  
+
+  display: flex;
+  flex-direction: column;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 20px;
+    @media screen and (max-width: 500px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 350px) {
+      flex-wrap: wrap;
+    }
+
+    gap: 10px;
+  }
+
+  .project-cards {
+    margin-top: auto;
+  }
+}

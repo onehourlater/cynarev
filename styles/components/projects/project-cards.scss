@@ -1,0 +1,19 @@
+
+.project-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 70px;
+
+  gap: 25px;
+
+  &__card {
+    /*
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    margin-bottom: 25px;
+    */
+  }
+}

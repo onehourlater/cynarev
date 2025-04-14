@@ -1,0 +1,57 @@
+.image-c {
+  position: relative;
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  background-color: #efefef;
+
+  height: 45vw;
+  min-height: 510px;
+  max-height: 510px;
+  @media screen and (max-width: 1200px) {
+    height: 37vw;
+    min-height: auto;
+    max-height: none;
+  }
+  @media screen and (max-width: 900px) {
+    min-width: 80%;
+    height: 53vw;
+  }
+
+  cursor: pointer;
+  transition: 0.2s ease all;
+  @media screen and (max-width: 800px) {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:hover {
+    filter: brightness(90%);
+    transform: scale(0.99);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  --display: flex;
+  
+  margin: 20px;
+  @media screen and (max-width: 900px) {
+    margin: 10px 0px;
+  }
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}

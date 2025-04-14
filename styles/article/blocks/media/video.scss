@@ -1,0 +1,45 @@
+.video-c {
+  width: 75vw;
+  @media screen and (max-width: 900px) {
+    flex-grow: 1;
+    display: flex;
+  }
+  max-width: 950px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background-color: #efefef;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  height: 45vw;
+  min-height: 510px;
+  max-height: 510px;
+  @media screen and (max-width: 1200px) {
+    height: 37vw;
+    min-height: auto;
+    max-height: none;
+  }
+  @media screen and (max-width: 900px) {
+    height: 53vw;
+  }
+}
+
+.video-wrapper {
+  margin: 20px;
+  @media screen and (max-width: 900px) {
+    margin: 0px;
+  }
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  video {
+    border-radius: 6px;
+  }
+}

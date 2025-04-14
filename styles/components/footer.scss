@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+
+  @media screen and (max-width: 1200px) {
+    position: relative;
+  }
+
+  display: flex;
+
+  &__c {
+    padding: 30px;
+    @media screen and (max-width: 1200px) {
+      padding: 0px;
+    }
+
+    &__social-icons {
+      margin-bottom: 10px;
+      
+      display: flex;
+      flex-direction: row;
+
+      gap: 8px;
+    }
+  }
+}

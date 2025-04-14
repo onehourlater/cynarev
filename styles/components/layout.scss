@@ -1,0 +1,19 @@
+.layout {
+  margin: 0 auto;
+  max-width: 1100px;
+
+  transition: 0.4s ease all;
+
+  margin-top: 0px;
+  @media screen and (max-width: 1500px) {
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 70px;
+  }
+
+  padding: 20px 40px;
+  @media screen and (max-width: 600px) {
+    padding: 10px;
+  }
+}
