@@ -34,7 +34,7 @@ export default function Page() {
         <Button type='link' title={(
             <>
               <div className="btn__icon">
-                <img src={'/icon-pdf-red.png'} className="btn-pdf-icon" />
+                <img src={'/icons/icon-pdf-red.png'} className="btn-pdf-icon" />
               </div>
               <span className="font-16 no-link-color">
                 Резюме.pdf
