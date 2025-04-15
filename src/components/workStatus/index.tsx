@@ -6,6 +6,9 @@ const WorkStatus = ({ align }: { align: string }) => {
     'title': 'Ищу новый проект или работу',
   })
 
+  // temporary disabled
+  return <></>
+
   return (
     <div className={`work-status work-status-align-${align} mb-40`}>
       <div className="work-status__c">
