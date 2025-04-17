@@ -28,7 +28,7 @@ const plugData = [{
       title: 'Интернет-магазин: Asamclo',
       image: {
         bgColor: '#F1DADA',
-        src: '/projects/asamclo/project-asamclo-1.png',
+        src: '/projects/asamclo/project-asamclo-1.webp',
       }
     },
   },
@@ -39,7 +39,7 @@ const plugData = [{
     description: 'Компания занимается аудиторской деятельностью с 2016 года, оказывает услуги в области бухгалтерского и налогового учета.',
     image: {
       bgColor: '#D4EAD2',
-      src: '/projects/ao/project-ao-1.png',
+      src: '/projects/ao/project-ao-1.webp',
     }
   },
   blocks: [{
@@ -65,7 +65,7 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/ao/АО-клиент-заказы.png', thumbnail: '/projects/ao/АО-клиент-заказы-small.png' },
+        { type: 'image', src: '/projects/ao/АО-клиент-заказы.webp', thumbnail: '/projects/ao/АО-клиент-заказы-small.webp' },
       ],
       description: 'Страница с заказами от лица клиента:\nЕсть возможность перейти в нужный заказ или создать новый',
       project: {
@@ -78,8 +78,8 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/ao/АО-клиент-страница-заказа-1.png', thumbnail: '/projects/ao/АО-клиент-страница-заказа-1-small.png' },
-        { type: 'image', src: '/projects/ao/АО-клиент-страница-заказа-2.png', thumbnail: '/projects/ao/АО-клиент-страница-заказа-2-small.png' },
+        { type: 'image', src: '/projects/ao/АО-клиент-страница-заказа-1.webp', thumbnail: '/projects/ao/АО-клиент-страница-заказа-1-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-клиент-страница-заказа-2.webp', thumbnail: '/projects/ao/АО-клиент-страница-заказа-2-small.webp' },
       ],
       description: 'Страница заказа от лица клиента: Eсть чат с компанией, информация по заказу, возможность посмотреть/скачать документы и ответить на запросы',
       project: {
@@ -105,7 +105,7 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/ao/Настольное ПО для Аудиторов-1.png', thumbnail: '/projects/ao/Настольное ПО для Аудиторов-1-small.png' },
+        { type: 'image', src: '/projects/ao/Настольное ПО для Аудиторов-1.webp', thumbnail: '/projects/ao/Настольное ПО для Аудиторов-1-small.webp' },
       ],
       description: 'Настольная программа для аудиторов, сделанная на Electron\'e для работы аудиторов на удаленной Windows машине. Через нее можно работать с заказом и файлами клиента',
     },
@@ -125,8 +125,8 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'video', src: '/projects/ao/ao-tg-preview-1.mov', thumbnail: '/projects/ao/АО-ТГ-БОТ-1-small.png' },
-        { type: 'image', src: '/projects/ao/АО-ТГ-БОТ-1.png', thumbnail: '/projects/ao/АО-ТГ-БОТ-1-small.png' },
+        { type: 'video', src: '/projects/ao/ao-tg-preview-1.mov', thumbnail: '/projects/ao/АО-ТГ-БОТ-1-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-ТГ-БОТ-1.webp', thumbnail: '/projects/ao/АО-ТГ-БОТ-1-small.webp' },
       ],
       description: 'Телеграм чат бот - консультант: Пользователь может задать вопрос и получить на него ответ от ИИ. Бот собирает контактные данные и имеет расширяемые лимиты',
       project: {
@@ -152,15 +152,15 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/ao/АО-лендинг-1.png', thumbnail: '/projects/ao/АО-лендинг-1-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-2.png', thumbnail: '/projects/ao/АО-лендинг-2-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-3.png', thumbnail: '/projects/ao/АО-лендинг-3-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-4.png', thumbnail: '/projects/ao/АО-лендинг-4-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-5.png', thumbnail: '/projects/ao/АО-лендинг-5-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-6.png', thumbnail: '/projects/ao/АО-лендинг-6-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-7.png', thumbnail: '/projects/ao/АО-лендинг-7-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-8.png', thumbnail: '/projects/ao/АО-лендинг-8-small.png' },
-        { type: 'image', src: '/projects/ao/АО-лендинг-9.png', thumbnail: '/projects/ao/АО-лендинг-9-small.png' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-1.webp', thumbnail: '/projects/ao/АО-лендинг-1-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-2.webp', thumbnail: '/projects/ao/АО-лендинг-2-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-3.webp', thumbnail: '/projects/ao/АО-лендинг-3-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-4.webp', thumbnail: '/projects/ao/АО-лендинг-4-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-5.webp', thumbnail: '/projects/ao/АО-лендинг-5-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-6.webp', thumbnail: '/projects/ao/АО-лендинг-6-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-7.webp', thumbnail: '/projects/ao/АО-лендинг-7-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-8.webp', thumbnail: '/projects/ao/АО-лендинг-8-small.webp' },
+        { type: 'image', src: '/projects/ao/АО-лендинг-9.webp', thumbnail: '/projects/ao/АО-лендинг-9-small.webp' },
       ],
       description: 'Одна из версий лендинга АудитОнлайн: Калькулятор расчета стоимости, преимущества, клиенты и команда',
     },
@@ -172,7 +172,7 @@ const plugData = [{
       title: 'Сайт: кто звонил',
       image: {
         bgColor: '#CED9E6',
-        src: '/projects/phones/project-phones-1.png',
+        src: '/projects/phones/project-phones-1.webp',
       }
     },
   },
@@ -183,7 +183,7 @@ const plugData = [{
     description: 'Интернет-магазин женской, мужской и детской одежды',
     image: {
       bgColor: '#F1DADA',
-      src: '/projects/asamclo/project-asamclo-1.png',
+      src: '/projects/asamclo/project-asamclo-1.webp',
     }
   },
   blocks: [{
@@ -212,9 +212,9 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/asamclo/asamclo-index-1.png', thumbnail: '/projects/asamclo/asamclo-index-1-small.png' },
-        { type: 'image', src: '/projects/asamclo/asamclo-index-2.png', thumbnail: '/projects/asamclo/asamclo-index-2-small.png' },
-        { type: 'image', src: '/projects/asamclo/asamclo-index-3.png', thumbnail: '/projects/asamclo/asamclo-index-3-small.png' },
+        { type: 'image', src: '/projects/asamclo/asamclo-index-1.webp', thumbnail: '/projects/asamclo/asamclo-index-1-small.webp' },
+        { type: 'image', src: '/projects/asamclo/asamclo-index-2.webp', thumbnail: '/projects/asamclo/asamclo-index-2-small.webp' },
+        { type: 'image', src: '/projects/asamclo/asamclo-index-3.webp', thumbnail: '/projects/asamclo/asamclo-index-3-small.webp' },
       ],
       description: 'Главная страница: каталог, блоки с помощью',
       project: {
@@ -227,8 +227,8 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/asamclo/asamclo-item-1.png', thumbnail: '/projects/asamclo/asamclo-item-1-small.png' },
-        { type: 'image', src: '/projects/asamclo/asamclo-item-2.png', thumbnail: '/projects/asamclo/asamclo-item-2-small.png' },
+        { type: 'image', src: '/projects/asamclo/asamclo-item-1.webp', thumbnail: '/projects/asamclo/asamclo-item-1-small.webp' },
+        { type: 'image', src: '/projects/asamclo/asamclo-item-2.webp', thumbnail: '/projects/asamclo/asamclo-item-2-small.webp' },
       ],
       description: 'Cтраница товара: Изображения, характеристики, описание, отзывы',
     },
@@ -236,9 +236,9 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/asamclo/asamclo-checkout-1.png', thumbnail: '/projects/asamclo/asamclo-checkout-1-small.png' },
-        { type: 'image', src: '/projects/asamclo/asamclo-checkout-2.png', thumbnail: '/projects/asamclo/asamclo-checkout-2-small.png' },
-        { type: 'image', src: '/projects/asamclo/asamclo-checkout-3.png', thumbnail: '/projects/asamclo/asamclo-checkout-3-small.png' },
+        { type: 'image', src: '/projects/asamclo/asamclo-checkout-1.webp', thumbnail: '/projects/asamclo/asamclo-checkout-1-small.webp' },
+        { type: 'image', src: '/projects/asamclo/asamclo-checkout-2.webp', thumbnail: '/projects/asamclo/asamclo-checkout-2-small.webp' },
+        { type: 'image', src: '/projects/asamclo/asamclo-checkout-3.webp', thumbnail: '/projects/asamclo/asamclo-checkout-3-small.webp' },
       ],
       description: 'Cтраница корзины: Список товаров, оформление заказа',
     },
@@ -250,7 +250,7 @@ const plugData = [{
       title: 'IT экосистема: АудитОнлайн',
       image: {
         bgColor: '#D4EAD2',
-        src: '/projects/ao/project-ao-1.png',
+        src: '/projects/ao/project-ao-1.webp',
       }
     },
   },
@@ -261,7 +261,7 @@ const plugData = [{
     description: 'Сайт с отзывами на телефонные номера.',
     image: {
       bgColor: '#CED9E6',
-      src: '/projects/phones/project-phones-1.png',
+      src: '/projects/phones/project-phones-1.webp',
     }
   },
   blocks: [{
@@ -287,8 +287,8 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/phones/phones-1.png', thumbnail: '/projects/phones/phones-1-small.png' },
-        { type: 'image', src: '/projects/phones/phones-2.png', thumbnail: '/projects/phones/phones-2-small.png' },
+        { type: 'image', src: '/projects/phones/phones-1.webp', thumbnail: '/projects/phones/phones-1-small.webp' },
+        { type: 'image', src: '/projects/phones/phones-2.webp', thumbnail: '/projects/phones/phones-2-small.webp' },
       ],
       description: 'Страница телефонного номера с отзывами',
     },
@@ -296,9 +296,9 @@ const plugData = [{
     type: BLOCK_TYPE_MEDIA,
     data: {
       media: [
-        { type: 'image', src: '/projects/phones/phones-web-dev-3.png', thumbnail: '/projects/phones/phones-web-dev-3-small.png' },
-        { type: 'image', src: '/projects/phones/phones-web-dev-2.png', thumbnail: '/projects/phones/phones-web-dev-2-small.png' },
-        { type: 'image', src: '/projects/phones/phones-web-dev-1.png', thumbnail: '/projects/phones/phones-web-dev-1-small.png' },
+        { type: 'image', src: '/projects/phones/phones-web-dev-3.webp', thumbnail: '/projects/phones/phones-web-dev-3-small.webp' },
+        { type: 'image', src: '/projects/phones/phones-web-dev-2.webp', thumbnail: '/projects/phones/phones-web-dev-2-small.webp' },
+        { type: 'image', src: '/projects/phones/phones-web-dev-1.webp', thumbnail: '/projects/phones/phones-web-dev-1-small.webp' },
       ],
       description: 'Производительность сайта по версии PageSpeed Insights',
     },

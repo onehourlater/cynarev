@@ -3,7 +3,7 @@ const Profile = (props: any) => {
   return (
     <div className="profile">
       <div className="profile__image">
-        <img src={'/profile/me-1.png'} className="profile__image__i" />
+        <img src={'/profile/me-1.webp'} className="profile__image__i" />
       </div>
       <div className="profile__info">
         <div className="profile__info__description">
