@@ -43,7 +43,7 @@ const ProjectBlocks = (props: { data: any }) => {
   
   return (
     <div className="article-blocks">
-      { data.blocks.map((element: any, index: number) => <ArticleBlock key={index} {...element} />) }
+      { data.blocks.map((element: any, index: number) => <ArticleBlock key={`${data.project.slug}-${index}`} {...element} />) }
     </div>
   )
 }
