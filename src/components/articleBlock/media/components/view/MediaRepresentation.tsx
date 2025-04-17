@@ -7,7 +7,7 @@ const DynamicReactPlayerView = dynamic(() => import('./VideoView'), {
 })
 const LazyImageView = lazy(() => import('./ImageView'))
 
-const MediaRepresentation = (props: { type: string, src: string, bgColor: string | null | undefined }) => {
+const MediaRepresentation = (props: { type: string, src: string, thumbnail: string, bgColor: string | null | undefined }) => {
   const { type } = props
 
   if (type == 'video') {

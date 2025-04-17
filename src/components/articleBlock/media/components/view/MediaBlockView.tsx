@@ -10,28 +10,26 @@ type MediaBlockInfoProps = {
   media: MediaStruct[];
 }
 const MediaBlockView = (props: MediaBlockInfoProps) => {
-  console.log('MediaBlockView props')
-  console.log(props)
-  
   const { media } = props
   const { project } = useContext(ProjectContext)
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
 
-  console.log('MediaBlockView project: ')
-  console.log(project)
-  
   if (!media) {
     return <div> no images </div>
   }
 
   // TODO: selectedImageIndex out of array case
-  const selectedMedia = media[selectedImageIndex]
+  const selectedMedia = media[selectedImageIndex] ?? null
+
+  if (!selectedMedia) {
+    return <div> selectedMedia is null </div>
+  }
 
   // TODO:
   return (
     <div className="article-block-media__view media-view">
-      <MediaRepresentation type={selectedMedia.type} src={selectedMedia.src} bgColor={project?.image.bgColor} />
+      <MediaRepresentation type={selectedMedia.type} src={selectedMedia.src} thumbnail={selectedMedia.thumbnail} bgColor={project?.image.bgColor} />
       { media.length > 1 && (
         <SlidesPreview bgColor={project?.image.bgColor} images={media} selectedImageIndex={selectedImageIndex} setSelectedImageIndex={setSelectedImageIndex} /> 
       )}
