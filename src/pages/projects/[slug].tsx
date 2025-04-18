@@ -1,6 +1,10 @@
 import React from 'react'
 import NotFound from "next/error";
 import { useRouter } from 'next/router'
+import type {
+  GetStaticProps,
+  GetStaticPaths,
+} from 'next'
 
 import { plugData } from '@/src/api/plug'
 import ArticleBlock from '@/src/components/articleBlock'
@@ -73,8 +77,32 @@ const ProjectNextPage = (props: { next: any }) => {
     </div>
   )
 }
-
-const ProjectPage = (props: any) => {
+ 
+export const getStaticPaths = (async () => {
+  return {
+    paths: [{
+        params: {
+          slug: 'auditonline',
+        },
+      }, {
+        params: {
+          slug: 'asamclo',
+        },
+      }, {
+        params: {
+          slug: 'phones',
+        },
+      }, 
+    ],
+    fallback: true,
+  }
+}) satisfies GetStaticPaths
+ 
+export const getStaticProps = (async (context) => {
+  return { props: {} }
+}) satisfies GetStaticProps<{}>
+ 
+export default function ProjectPage() {
   const router = useRouter()
   const { slug } = router.query
 
@@ -99,4 +127,3 @@ const ProjectPage = (props: any) => {
     </div>
   )
 }
-export default ProjectPage
