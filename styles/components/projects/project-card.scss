@@ -31,6 +31,9 @@
       width: 100%;
 
       min-height: 250px;
+      @media screen and (max-width: 350px) {
+        min-height: 200px;
+      }
     }
   }
 
