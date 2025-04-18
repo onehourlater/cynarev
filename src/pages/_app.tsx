@@ -12,14 +12,14 @@ import '@/styles/index.scss'
 import { Open_Sans } from 'next/font/google'
 const opensans = Open_Sans({ subsets: ['cyrillic'] })
 
-const defaultLayout = (page: ReactElement) => ( 
+const defaultLayout = (page: ReactElement<any>) => ( 
   <Layout> 
     { page } 
   </Layout>
 )
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode
+  getLayout?: (page: ReactElement<any>) => ReactNode
 }
  
 type AppPropsWithLayout = AppProps & {

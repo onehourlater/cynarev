@@ -8,7 +8,7 @@ import Layout from '@/src/components/layout'
 const About: NextPageWithLayout = () => {
   return <div>About</div>
 }
-About.getLayout = function getLayout(page: ReactElement) {
+About.getLayout = function getLayout(page: ReactElement<any>) {
   return (
     <Layout>
       <div>
