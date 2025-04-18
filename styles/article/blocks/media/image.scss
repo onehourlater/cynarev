@@ -40,11 +40,15 @@
 
 .image-wrapper {
   position: relative;
-  --display: flex;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
-  margin: 20px;
+  padding: 20px;
   @media screen and (max-width: 900px) {
-    margin: 10px 0px;
+    padding: 5px;
   }
   border-radius: 6px;
   overflow: hidden;
