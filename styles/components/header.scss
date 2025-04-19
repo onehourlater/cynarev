@@ -2,31 +2,83 @@
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 9;
 
   display: flex;
   flex-direction: column;
 
+  &__c {
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__logo {
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
     @media screen and (max-width: 600px) {
-      padding: 20px;
+      padding: 20px 20px 10px 20px;
     }
     @media screen and (max-width: 400px) {
-      padding: 15px;
+      padding: 15px 15px 10px 15px;
     }
+  }
 
-    a {
-      cursor: pointer;
-      transition: 0.1s ease all;
+  &__menu {
+    padding: 10px 30px;
+    opacity: 1.0;
 
-      &:hover {
-        color: $main-color;
-      }
-    } 
+    transition: 0.2s ease all;
+    @media screen and (max-width: 900px) {
+      opacity: 0.0;
+      pointer-events: none;
+    }
   }
 }
 .logo {
   font-size: 30px;
   font-weight: 500;
+
+  a {
+    cursor: pointer;
+    transition: 0.1s ease all;
+
+    &:hover {
+      color: $main-color;
+    }
+  } 
+}
+.menu {
+  font-size: 16px;
+  font-weight: 500;
+
+  &__link {
+    margin: 15px 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #999;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.2s ease all;
+
+    &__i {
+      max-width: 20px;
+      margin-right: 8px;
+    }
+
+    &--active {
+      opacity: 1.0;
+      color: $main-color;
+    }
+
+    &:hover {
+      opacity: 1.0;
+      color: $main-color;
+    }
+  }
 }

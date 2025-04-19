@@ -10,6 +10,7 @@ import { plugData } from '@/src/api/plug'
 import ArticleBlock from '@/src/components/articleBlock'
 import {ProjectContext} from '@/src/containers/project'
 import WorkStatus from '@/src/components/workStatus';
+import Layout from '@/src/components/layout';
 
 
 const PageTitle = (props: { title: string }) => {
@@ -125,5 +126,12 @@ export default function ProjectPage() {
 
       <ProjectNextPage next={projectData.page.next}/>
     </div>
+  )
+}
+ProjectPage.getLayout = function getLayout(page: React.ReactElement<any>) {
+  return (
+    <Layout showHeaderMenu={true}>
+      {page}
+    </Layout>
   )
 }
