@@ -3,7 +3,7 @@ import Footer from './footer'
 import { ModalContextProvider } from './modal/context'
  
 
-export default function Layout({ children, showHeaderMenu }: { children: any, showHeaderMenu: boolean }) {
+export default function Layout({ children, showHeaderMenu }: { children: any, showHeaderMenu?: boolean }) {
   return (
     <div className="layout">
       <Header showHeaderMenu={showHeaderMenu} />

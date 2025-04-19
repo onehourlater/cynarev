@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import HeaderMenu from './headerMenu'
 
 
-const Header = (props: { showHeaderMenu: boolean }) => {
+const Header = (props: { showHeaderMenu: boolean | undefined }) => {
   const { showHeaderMenu } = props
   
   const router = useRouter()
