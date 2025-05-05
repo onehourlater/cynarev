@@ -1,16 +1,16 @@
 import React from 'react'
 import { BLOCK_TYPE_DIVIDER, BLOCK_TYPE_RICH_TEXT, BLOCK_TYPES } from './types'
 import { BLOCK_TYPE_TEXT, BLOCK_TYPE_MEDIA } from './types'
+import { BlocksComponentsMapper } from './types'
 
-import MediaBlock, { MediaBlockProps } from './media'
-import TextBlock, { TextBlockProps } from './text'
+import MediaBlock from './media'
+import TextBlock from './text'
 import RichTextBlock from './richText'
 import DividerBlock from './dividers'
 import UnknownBlock from './unknown'
 
 
-// TODO: replace any with { MediaBlockProps or TextBlockProps }
-const blocksMapper: { [key: string]: React.FC<{ data: any }> } = {
+const blocksMapper: BlocksComponentsMapper = {
   [BLOCK_TYPE_TEXT]: TextBlock,
   [BLOCK_TYPE_RICH_TEXT]: RichTextBlock,
   [BLOCK_TYPE_MEDIA]: MediaBlock,
